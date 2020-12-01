@@ -43,7 +43,7 @@ body{
 /*Home*/
 
 header{
-    position:absolute;
+    position:fixed;
     left: 0px;
     right: 0px;
     border-bottom: 1px solid #423940;
@@ -62,7 +62,7 @@ header.fixed{
         transform: translateY(-100%);
     }
     100%{
-        transform: translateY(-%)
+        transform: translateY(-100%)
     }
 } 
 
@@ -81,9 +81,6 @@ header .brand-name a{
 
 header.fixed .brand-name a{
     color: #000000;
-}
-
-header .navbar{
 }
 
 header .navbar ul{
@@ -218,9 +215,6 @@ header .navbar ul li a:hover:before{
     font-weight: 400;
     text-transform: uppercase!important;
     letter-spacing: 2px;
-}
-
-.about-me .about-content{
 }
 
 .about-me .about-content .img{
@@ -732,12 +726,12 @@ footer .social a:hover{
 
 
 .ham-burger .fa {
-    font-size: 20px;
-    height: 30px;
-    width: 35px;
+    font-size: 25px;
+    height: 32px;
+    width: 37px;
     background-color: #ffffff;
     color: #000000;
-    border-radius: 3px;
+    border-radius: 4px;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
@@ -749,6 +743,18 @@ footer .social a:hover{
 @media(max-width: 991px){
     .home .home-content .block h1{
         font-size: 50px; 
+    }
+
+    header .navbar ul li{
+        margin-left: 25px;
+    }
+
+    header .navbar ul{
+        margin-right: 15px;
+    }
+
+    header .brand-name a{
+        margin-left: 20px;
     }
 }
 
@@ -830,7 +836,8 @@ footer .social a:hover{
         max-width: 100%;
     }
 }
-@media(max-width: 500px) {
+@media(max-width: 400px) {
+    
     .home .home-content .block h1 {
         font-size: 40px;
     }
